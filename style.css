@@ -1,0 +1,88 @@
+/*
+.sora-<uniquifier> {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Sora";
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.card {
+  width: 90%;
+  max-width: 336px;
+  padding: 16px;
+  background-color: #FAFAF9;
+  border-radius: 20px;
+  box-shadow: 5px 10px 15px rgba(17, 23, 41, 0.05);
+  overflow: hidden;
+  border-style: solid;
+  border-color: #E5EAF0;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+p {
+  text-align: left;
+  margin: 0;
+}
+
+.design {
+  font-size: 10px;
+  background-color: #E6D6FC;
+  color: #883AE1;
+  padding: 4px ;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-top:16px;
+}
+.main-content{
+  color:#6C727F;
+  font-size:14px;
+  padding-bottom: 16px;
+  font-weight: 300;
+}
+.name{
+  color:#6C727F;
+  font-size: 12px;
+  padding: 16px 0px 16px 0px;
+  font-weight: 300;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #E5EAF0;
+}
+
+@media (min-width: 1280px) {
+  .card {
+    max-width: 362px;
+    padding: 24px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .card {
+    max-width: 160px;
+    padding: 12px;
+  }
+}
